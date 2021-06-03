@@ -7,16 +7,16 @@ let player2 = "Player 2";
 $(document).ready(function () {
     console.log('jquery hello');
 
-    // set player names 
+    // set player names
     $('a.player-1').on('click', function () {
-        player1 = prompt("Hi Player 1, change your name:");
+        player1 = prompt(`Hi ${player1}, change your name:`);
         if (player1) {
             $('.firstPlayer').text(player1);
         }
     });
 
     $('a.player-2').on('click', function () {
-        player2 = prompt("Hi Player 2, change your name:");
+        player2 = prompt(`Hi ${player2}, change your name:`);
         if (player2) {
             $('.secondPlayer').text(player2);
         }
