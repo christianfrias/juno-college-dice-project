@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Christian's Dice Game</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	<style>
+		body {
+			background-color: #eff;
+		}
+		img {
+			width: 100%;
+		}
+		.results {
+			text-align:center;
+		}
+		.firstPlayerBorder {
+			border-bottom: 10px solid #d71e00;
+    		padding-bottom: 10px;
+		}
+		.secondPlayerBorder {
+			border-bottom: 10px solid orange;
+    		padding-bottom: 10px;
+		}
+		.playerScore1, .playerScore2 {
+			font-weight:bold;
+		}
+	</style>
+</head>
+
+<body class="my-5">
+
+	<div class="container">
+		<h1>Christian's Dice Game</h1>
+		<p>Set player names. Roll the dices. Player who rolls the higher dices wins.</p>
+
+		<div class="row">
+			<div class="col-6">
+				<p class="mb-0 h5"><span class="firstPlayer">Player 1</span> (<a href="#" class="player-1">Change Name</a>)</p>
+				<p class="firstPlayerBorder"><span class="firstPlayer">Player 1</span>'s Score: <span class="playerScore1">0</span></p>
+			</div>
+			<div class="col-6">
+				<p class="mb-0 h5"><span class="secondPlayer">Player 2</span> (<a href="#" class="player-2">Change Name</a>)</p>
+				<p class="secondPlayerBorder"><span class="secondPlayer">Player 2</span>'s Score: <span class="playerScore2">0</span></p>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-3">
+				<div class="dice player1">
+					<img id="firstDice" src="dice6.png">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="dice player1">
+					<img id="secondDice" src="dice6.png">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="dice player2">
+					<img id="fifthDice" src="dice6.png">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="dice player2">
+					<img id="sixthDice" src="dice6.png">
+				</div>
+			</div>
+		</div>
+		<div class="row mt-3">
+			<div class="col-3">
+				<div class="dice player1">
+					<img id="thirdDice" src="dice6.png">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="dice player1">
+					<img id="fourthDice" src="dice6.png">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="dice player2">
+					<img id="seventhDice" src="dice6.png">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="dice player2">
+					<img id="eighthDice" src="dice6.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row pt-4">
+			<div class="col-6">
+				<button type="button" class="btn btn-primary">
+					Roll the Dices
+				</button>
+			</div>
+			<div class="col-6">
+				<p class="results h4 text-center"></p>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+
+</html>
